@@ -6,11 +6,3 @@ mongoose.connect(process.env.MONGO_URL, {
     useFindAndModify: false,
     useUnifiedTopology: true
 })
-
-
-
-
-// const newTask = new Task({
-//     description: 'Make a million',
-//     completed: true
-// })

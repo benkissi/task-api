@@ -88,7 +88,6 @@ router.patch('/tasks/:id', auth, async (req, res) => {
 })
 
 router.delete('/tasks/:id', auth, async (req, res) => {
-    console.log(req.user._id)
     try {
         const task = await Task.findOneAndDelete({ _id: req.params.id, owner: req.user._id })
 
